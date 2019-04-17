@@ -1,7 +1,7 @@
 class School
 
-  def initialize(school_name)
-    @school_name = school_name
+  def initialize(name)
+    @name = name
     @roster = {}
   end
 
@@ -9,8 +9,8 @@ class School
     @roster
   end
 
-  def add_student(name, grade)
-    @student_name = name
+  def add_student(student, grade)
+    @student = name
     @grade = grade
     if @roster.include?(grade) == false
       @roster[grade] = []
